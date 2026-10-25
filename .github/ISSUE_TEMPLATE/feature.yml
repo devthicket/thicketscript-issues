@@ -1,0 +1,34 @@
+name: Feature request
+description: Something ThicketScript should do.
+labels: ["feature"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Language
+        - Runtime
+        - willow (2D)
+        - willowui (UI)
+        - gamekit
+        - IDE plugin
+        - Building and packaging
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: need
+    attributes:
+      label: What are you trying to make?
+      description: The game or tool, and the point where ThicketScript gets in the way.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+      description: The code you'd like to write, if you can show it.
+      render: ts
+    validations:
+      required: true

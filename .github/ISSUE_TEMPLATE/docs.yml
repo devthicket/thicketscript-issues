@@ -1,0 +1,19 @@
+name: Docs problem
+description: A page on thicketscript.com is wrong, unclear or missing.
+labels: ["docs"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: The address of the page.
+      placeholder: "https://www.thicketscript.com/docs/…"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong?
+      description: An example that doesn't run, a wrong statement, a broken link, or what you looked for and couldn't find.
+    validations:
+      required: true

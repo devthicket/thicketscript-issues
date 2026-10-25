@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question or get help
+    url: https://discord.gg/phanxgames
+    about: Questions are answered fastest in the Discord.
+  - name: The docs
+    url: https://www.thicketscript.com/docs/start/
+    about: Guides and the API reference for ThicketScript.
+  - name: The editors (Waystone and the rest)
+    url: https://github.com/devthicket/thicketcreator-issues
+    about: Editor bugs and requests go to thicketcreator-issues.

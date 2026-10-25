@@ -1,0 +1,58 @@
+name: Bug report
+description: Something in ThicketScript doesn't work as it should.
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Language (syntax, type checker, error messages)
+        - Runtime (running, VM, performance, crash)
+        - willow (2D)
+        - willowui (UI)
+        - gamekit
+        - IDE plugin (JetBrains, VS Code, language server, debugging)
+        - Building and packaging
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The output of `thicket --version`.
+      placeholder: "e.g. thicket 0.1.16"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: The smallest script that shows it
+      description: Paste a short .tks script (or attach a small project) and the command you ran.
+      render: ts
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead?
+      description: The full error output helps a lot.
+    validations:
+      required: true
